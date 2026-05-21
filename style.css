@@ -1,0 +1,143 @@
+/* Mengatur dasar halaman */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Kotak Kalender */
+.container {
+    background: #1e1e1e;
+    width: 100%;
+    max-width: 400px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 1px solid #333;
+    text-align: center;
+}
+
+h1 {
+    color: #00adb5;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.brand {
+    font-size: 12px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* Tampilan Jam Digital */
+.jam-digital {
+    font-size: 28px;
+    font-weight: bold;
+    color: #eee;
+    margin-bottom: 25px;
+    background: #252525;
+    padding: 10px;
+    border-radius: 10px;
+    border-bottom: 3px solid #00adb5;
+}
+
+/* Bagian Atas Kalender (Bulan & Tombol) */
+.kalender-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.kalender-header button {
+    background: #00adb5;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.kalender-header button:hover {
+    background: #008087;
+}
+
+#nama-bulan {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Grid Tanggal dan Hari */
+.grid-hari {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #00adb5;
+}
+
+.grid-tanggal {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.tanggal {
+    width: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+    color: #ccc;
+}
+
+.tanggal:hover {
+    background: #333;
+    color: #fff;
+}
+
+/* Efek Hari Ini */
+.hari-ini {
+    background: #00adb5 !important;
+    color: #fff !important;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0,173,181,0.5);
+}
+
+.kosong {
+    cursor: default;
+}
+
+/* Kotak Notifikasi Catatan */
+#notif-box {
+    margin-top: 20px;
+    padding: 12px;
+    background: #252525;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #00adb5;
+    border-left: 4px solid #00adb5;
+    display: none;
+    text-align: left;
+}
