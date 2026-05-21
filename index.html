@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalender Interaktif Eduaksi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🗓️ Kalender Digital</h1>
+        <div class="brand">Eduaksi Kreatif</div>
+        
+        <div class="jam-digital" id="live-jam">00:00:00</div>
+
+        <div class="kalender-header">
+            <button onclick="bulanSebelumnya()">◀</button>
+            <span id="nama-bulan">Mei 2026</span>
+            <button onclick="bulanBerikutnya()">▶</button>
+        </div>
+
+        <div class="grid-hari">
+            <div>Min</div><div>Sen</div><div>Sel</div><div>Rab</div><div>Kam</div><div>Jum</div><div>Sab</div>
+        </div>
+
+        <div class="grid-tanggal" id="wadah-tanggal"></div>
+
+        <div id="notif-box"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
